@@ -1,0 +1,174 @@
+{
+  "contract_name": "lazads.plan",
+  "contract_version": "1.0",
+  "producer_version": "1.0.0",
+  "kind": "plan",
+  "local_id": "local-9591c320f1f2a9d0",
+  "status": "PLAN_READY",
+  "review": "HUMAN_REVIEW_REQUIRED",
+  "publish_authorized": false,
+  "external_reads": false,
+  "external_writes": false,
+  "generation_mode": "deterministic",
+  "input": {
+    "platform": "lazada",
+    "market": "SG",
+    "currency": "SGD",
+    "source": {
+      "kind": "synthetic",
+      "note": "All products, money, permissions and results are fictional test data."
+    },
+    "money_decimals": 2,
+    "campaign": {
+      "mode": "sponsored_max_product",
+      "days": 14,
+      "budget": "1400",
+      "account_ready": true,
+      "feature_confirmed": true,
+      "target_return": null,
+      "ad_rate": null
+    },
+    "products": [
+      {
+        "sku": "demo-cup",
+        "title": "Synthetic ceramic cup / 合成示範商品",
+        "stock": 30,
+        "listing_ready": true,
+        "advertising_eligible": true,
+        "buy_box": null,
+        "order_revenue": "100",
+        "order_costs": {
+          "cogs": "35",
+          "platform_fees": "8",
+          "fulfilment": "10",
+          "other": "2"
+        },
+        "target_profit": "10",
+        "expected_cvr": "0.05",
+        "fee_base_per_order": null,
+        "terms": [
+          "ceramic cup",
+          "陶瓷杯"
+        ]
+      },
+      {
+        "sku": "demo-hold",
+        "title": "Synthetic ceramic cup / 合成示範商品",
+        "stock": 0,
+        "listing_ready": true,
+        "advertising_eligible": true,
+        "buy_box": null,
+        "order_revenue": "100",
+        "order_costs": {
+          "cogs": "35",
+          "platform_fees": "8",
+          "fulfilment": "10",
+          "other": "2"
+        },
+        "target_profit": "10",
+        "expected_cvr": "0.05",
+        "fee_base_per_order": null,
+        "terms": [
+          "ceramic cup",
+          "陶瓷杯"
+        ]
+      }
+    ],
+    "assets": {
+      "rights_confirmed": null,
+      "live_ready": null
+    }
+  },
+  "result": {
+    "platform_workflow": [
+      "確認當前站點及 Sponsored Max 商品模式",
+      "選擇有庫存且成本完整的 SKU",
+      "核對目標 ROAS、預算、學習狀態及同商品活動",
+      "保留人工設定檢查清單"
+    ],
+    "products": [
+      {
+        "sku": "demo-cup",
+        "title": "Synthetic ceramic cup / 合成示範商品",
+        "readiness": "PILOT_CANDIDATE",
+        "blocked_by": [],
+        "missing": [],
+        "economics": {
+          "status": "SCENARIO_ONLY",
+          "non_ad_contribution_per_order": "45.000000",
+          "break_even_cpa": "45.000000",
+          "break_even_roas_on_net_revenue": "2.222222",
+          "target_ad_allowance_per_order": "35.000000",
+          "target_roas_on_net_revenue": "2.857143",
+          "economic_cpc_ceiling": "1.750000"
+        },
+        "supplied_listing_terms": [
+          "ceramic cup",
+          "陶瓷杯"
+        ],
+        "research_status": "NO_SEARCH_VOLUME_OR_LIVE_KEYWORD_DATA"
+      },
+      {
+        "sku": "demo-hold",
+        "title": "Synthetic ceramic cup / 合成示範商品",
+        "readiness": "BLOCKED",
+        "blocked_by": [
+          "out_of_stock"
+        ],
+        "missing": [],
+        "economics": {
+          "status": "SCENARIO_ONLY",
+          "non_ad_contribution_per_order": "45.000000",
+          "break_even_cpa": "45.000000",
+          "break_even_roas_on_net_revenue": "2.222222",
+          "target_ad_allowance_per_order": "35.000000",
+          "target_roas_on_net_revenue": "2.857143",
+          "economic_cpc_ceiling": "1.750000"
+        },
+        "supplied_listing_terms": [
+          "ceramic cup",
+          "陶瓷杯"
+        ],
+        "research_status": "NO_SEARCH_VOLUME_OR_LIVE_KEYWORD_DATA"
+      }
+    ],
+    "budget": {
+      "scope": "product_campaign_accounting_only",
+      "total_cap": "1400.000000",
+      "allocated_total": "1400.000000",
+      "reserve": "0.000000",
+      "allocation": [
+        {
+          "sku": "demo-cup",
+          "pilot_allowance": "1400.000000"
+        }
+      ],
+      "days": 14,
+      "daily_reference_not_live_budget": "100.000000"
+    },
+    "requested_target_return": null,
+    "target_return_validated_for_platform": false,
+    "checklist": [
+      "確認目標站點，不以語言猜站點",
+      "確認現有活動已升級或保留 Manual",
+      "查核同 SKU 跨活動互斥／優先權",
+      "統一 Guided GMV、歸因期間與幣別",
+      "不把優惠券返還當成已實現利潤"
+    ],
+    "notes": [
+      "The August 2026 notice phases selected Sponsored Discovery auto types into Sponsored Max; Manual is distinguished.",
+      "Never promise ROAS Protection rebates or default-enable Rapid Boost/unlimited spend. Eligibility and thresholds vary.",
+      "Target return is user-supplied context, not a validated platform setting or guaranteed result.",
+      "All allocations are equal-split pilot accounting scenarios, not optimized bids or live budgets.",
+      "Use net revenue and fully loaded non-ad costs from the same representative order. No platform fees are assumed.",
+      "Reported gross GMV / spend is not directly comparable with a net-revenue break-even threshold.",
+      "Capability confirmations are user assertions, not independently verified account eligibility.",
+      "Review stock, attribution maturity, rights, site rules and changes before taking any manual action."
+    ],
+    "source_refs": [
+      "LAZ-1",
+      "LAZ-2",
+      "LAZ-3"
+    ]
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "slug": "lazads",
+  "name": "LazAds Skill Lite",
+  "platform": "lazada",
+  "market": "SG",
+  "currency": "SGD",
+  "focus": "Lazada Sponsored Max 商品／店鋪與手動探索規劃、損益與報表診斷",
+  "english": "Offline Lazada Sponsored Max and manual discovery planning with SKU economics.",
+  "modes": [
+    "sponsored_max_product",
+    "sponsored_max_store",
+    "sponsored_discovery_manual"
+  ],
+  "workflows": {
+    "sponsored_max_product": [
+      "確認當前站點及 Sponsored Max 商品模式",
+      "選擇有庫存且成本完整的 SKU",
+      "核對目標 ROAS、預算、學習狀態及同商品活動",
+      "保留人工設定檢查清單"
+    ],
+    "sponsored_max_store": [
+      "確認店鋪模式可用及選品／排除控制",
+      "以整店目標管理；SKU 分攤僅會計情境",
+      "避免與商品模式重疊歸因",
+      "查核 Rapid Boost／ROAS Protection 實際條件"
+    ],
+    "sponsored_discovery_manual": [
+      "確認帳號仍提供 Manual",
+      "整理供給資料中的詞與商品組",
+      "不使用已轉移的 Automated／Promoted Specific Products 流程",
+      "人工核對搜尋詞、出價與報表口徑"
+    ]
+  },
+  "budget_scope": {
+    "sponsored_max_product": "product_campaign_accounting_only",
+    "sponsored_max_store": "store_campaign_accounting_only_not_sku_budget_settings",
+    "sponsored_discovery_manual": "manual_campaign_accounting_only"
+  },
+  "notes": [
+    "The August 2026 notice phases selected Sponsored Discovery auto types into Sponsored Max; Manual is distinguished.",
+    "Never promise ROAS Protection rebates or default-enable Rapid Boost/unlimited spend. Eligibility and thresholds vary.",
+    "Target return is user-supplied context, not a validated platform setting or guaranteed result."
+  ],
+  "checklist": [
+    "確認目標站點，不以語言猜站點",
+    "確認現有活動已升級或保留 Manual",
+    "查核同 SKU 跨活動互斥／優先權",
+    "統一 Guided GMV、歸因期間與幣別",
+    "不把優惠券返還當成已實現利潤"
+  ],
+  "sources": [
+    {
+      "id": "LAZ-1",
+      "title": "Selected Sponsored Discovery types phase-out",
+      "url": "https://www.lazadasolutions.com/news-updates/sponsored-discovery-auto-upgrade/",
+      "checked_on": "2026-10-05",
+      "scope": "Lazada; rollout/account dependent",
+      "summary": "Auto types transition to Sponsored Max; Manual remains distinguished."
+    },
+    {
+      "id": "LAZ-2",
+      "title": "Sponsored Max ROAS/ROI Protection",
+      "url": "https://www.lazadasolutions.com/news-updates/roas-protection-feature/",
+      "checked_on": "2026-10-05",
+      "scope": "Lazada; account dependent",
+      "summary": "Protection is conditional, not a guaranteed profit or cash rebate."
+    },
+    {
+      "id": "LAZ-3",
+      "title": "Sponsored Max Rapid Boost",
+      "url": "https://www.lazadasolutions.com/news-updates/sponsoredmax-rapid-boost/",
+      "checked_on": "2026-10-05",
+      "scope": "Lazada; account dependent",
+      "summary": "Exploration can run below target return. Do not enable automatically."
+    }
+  ],
+  "skill_id": "lazads-skill-lite",
+  "repo": "ckolpeter/LazAds-Skill-Lite",
+  "version": "1.0.0",
+  "source_policy": "2026-10-05 research snapshot; no live capability assertion; refresh manually before operating."
+}
